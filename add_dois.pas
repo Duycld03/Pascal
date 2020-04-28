@@ -2,7 +2,7 @@ program Add_Dots;
 uses crt;
 function add_Dots(m:longint):string;
 var text, text2:string;
-    num, num2, num3:integer;
+    num, num2, num3:extended;
 begin
     num:= m div 1000 + 1;
     num2:= 0;
