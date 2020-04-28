@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-=======
 program Add_Dots;
 uses crt;
 function add_Dots(m:longint):string;
 var text, text2:string;
     num, num2, num3:longint;
-    x,y:in
+    num
 begin
     num:= m div 1000 + 1;
     num2:= 0;
@@ -48,4 +46,3 @@ begin
     writeln('So da phan nghin: ',add_Dots(m));
     readln
 end.
->>>>>>> 1858230b1e584dd637414c66a7d41f7f81edb625
