@@ -4,6 +4,7 @@ function add_Dots(m:longint):string;
 var text, text2:string;
     num, num2, num3:longint;
     num10:integer;
+    str:string;
 begin
     num:= m div 1000 + 1;
     num2:= 0;
