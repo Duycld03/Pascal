@@ -43,5 +43,5 @@ begin
     clrscr;
     write('Nhap so: '); readln(m);
     writeln('So da phan nghin: ',add_Dots(m));
-    readln;
+    readln
 end.
