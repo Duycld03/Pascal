@@ -1,7 +1,13 @@
 program Add_Dots;
 uses crt;
+function numberToString(n:longint):string;
+var text2:string;
+begin
+    str(n, text2);
+    numberToString:= text2;
+end;
 function add_Dots(m:longint):string;
-var text, text2:string;
+var text:string;
     num, num2, num3:longint;
 begin
     num:= m div 1000 + 1;
@@ -11,27 +17,23 @@ begin
     begin
         if m < 1000 then
         begin
-            str(m, text2);
-                text:= text2 + text;
-                break;
+            text:= numberToString(m) + text;
+            break;
         end;
         num3:= m mod 1000;
         if num3 = 0 then
             text:= '.000' + text
         else if num3 < 10 then
         begin
-            str(num3, text2);
-            text:= '.00' + text2 + text;
+            text:= '.00' + numberToString(num3) + text;
         end
         else if num3 < 100 then
         begin
-            str(num3, text2);
-            text:= '.0' + text2 + text;
+            text:= '.0' + numberToString(num3) + text;
         end
         else
         begin
-        str(num3, text2);
-            text:= '.' + text2 + text;
+            text:= '.' + numberToString(num3) + text;
         end;
         m:= m div 1000;
         num2:= num2 + 1;
