@@ -33,6 +33,8 @@ begin
       s:=0;
       readln(f);
   end;
+  close(f);
+  close(fi);
 end;
 begin
   gfile(f1,'e:\input.txt',1);
@@ -43,6 +45,4 @@ begin
   gfile(f3,'e:\input2.txt',1);
   gfile(f4,'e:\output2.txt',2);
   tongDong(f3,f4);
-  close(f3);
-  close(f4);
 end.
